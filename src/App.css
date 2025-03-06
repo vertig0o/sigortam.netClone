@@ -23,15 +23,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(100% - 165px);
+  width: calc(95% - 150px);
   margin-left: auto;
 }
+.second-nav {
+  display: flex;
+  width: 40%;
+  margin-right: auto;
+}
 
-.dropdown-menu.show {
+.nav-dropdown-products dropdown-menu.show {
   width: 90vw;
   max-width: 617px;
   padding: 36px;
-  background-color: #f5f7f9;
+  /* background-color: #f5f7f9; */
 }
 /* Mega-menu için genel stil */
 .custom-dropdown .dropdown-menu {
@@ -39,6 +44,7 @@
   padding: 36px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f5f7f9;
 }
 
 /* Grid yapısı için düzenlemeler */
@@ -48,12 +54,6 @@
   gap: 30px; /* Satırlar arasındaki boşluk */
 }
 
-/* .mega-menu-title {
-  display: block;
-  margin-bottom: 28px;
-  font-size: 20px;
-  font-weight: 600 !important;
-} */
 /* Grid içindeki öğeleri yerleştirme */
 .mega-menu-grid {
   position: relative;
@@ -65,10 +65,6 @@
 
 /* Her bir öğe için düzen */
 .mega-menu-item {
-  /* padding: 10px;
-  border-radius: 8px;
-  background-color: #f8f9fa;
-  transition: background-color 0.3s ease; */
   position: relative;
   padding: 20px 12px;
   background-color: #fff;
@@ -98,6 +94,7 @@
   max-height: 60px;
   object-fit: contain;
 }
+
 .nav-item-with-icon .icon {
   display: none; /* Başlangıçta ikon gizli */
 }

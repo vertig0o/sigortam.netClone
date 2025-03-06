@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import Container from "react-bootstrap/Container";
 import { BsArrowRight } from "react-icons/bs";
-
+import { BsTelephone } from "react-icons/bs";
 import { Nav, Navbar, NavDropdown, Button, Image } from "react-bootstrap";
 function Header() {
   return (
@@ -203,15 +203,34 @@ function Header() {
           <Nav.Link href="/police-iptal/basvuru">
             Poliçe İptal İşlemleri
           </Nav.Link>
-          <NavDropdown title="Bilgi Merkezi" id="nav-dropdown">
+
+          <NavDropdown
+            title="Bilgi Merkezi"
+            id="nav-dropdown-info"
+            className="info-dropdown"
+          >
             <NavDropdown.Item href="/blog">Sigorta Blog</NavDropdown.Item>
             <NavDropdown.Item href="/hakkimizda">Hakkımızda</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="tel:4442400">Yardımcı olmaya hazırız</Nav.Link>
         </Nav>
-        <Button className="button app-button app-button--default app-button--xs">
-          Giriş yap/Üye ol
-        </Button>
+        <div className="second-nav">
+          <Nav.Link
+            href="tel:4442400"
+            className="d-flex flex-column justify-content-end     "
+          >
+            <small>Yardımcı olmaya hazırız</small>
+            <span>
+              <BsTelephone size={20} />
+              44444
+            </span>
+          </Nav.Link>
+          <Button
+            className="button app-button app-button--default app-button--xs ms-2"
+            style={{ width: "55%" }}
+          >
+            Giriş yap/Üye ol
+          </Button>
+        </div>
       </Navbar.Collapse>
     </Navbar>
   );
