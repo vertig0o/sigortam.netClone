@@ -1,0 +1,32 @@
+.App {
+  background: #f5f7f9;
+}
+.list-branch-list {
+  padding: 145px;
+  text-align: center;
+}
+.branch-list__title {
+  font-size: 54px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.branch-list__subTitle {
+  margin-bottom: 25px;
+}
+.branch-list__boxItem card {
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Kart hafifçe büyüsün */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+}
+
+.card:hover .card-body span {
+  color: #007aff; /* Hover sırasında yazı turuncuya dönüşsün */
+}

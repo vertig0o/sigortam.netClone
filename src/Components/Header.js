@@ -4,7 +4,8 @@ import Container from "react-bootstrap/Container";
 import { BsArrowRight } from "react-icons/bs";
 import { BsTelephone } from "react-icons/bs";
 import { Nav, Navbar, NavDropdown, Button, Image } from "react-bootstrap";
-function Header() {
+
+function Header({ showDropdown, toggleDropdown }) {
   return (
     <Navbar bg="light" expand="lg" className="header-app">
       <Navbar.Brand href="/">
@@ -28,6 +29,9 @@ function Header() {
             title="Ürünlerimiz"
             id="nav-dropdown-products"
             className="custom-dropdown"
+            show={showDropdown} // Dropdown açık/kapalı kontrolü
+            // onMouseLeave={() => toggleDropdown(false)}
+            onClick={toggleDropdown}
           >
             <Container className="mega-menu-content">
               <strong className="mega-menu-title">
