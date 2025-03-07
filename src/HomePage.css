@@ -28,5 +28,102 @@
 }
 
 .card:hover .card-body span {
-  color: #007aff; /* Hover sırasında yazı turuncuya dönüşsün */
+  color: #007aff;
+}
+.scale3d {
+  transform: scale3d(var(--scale-x), var(--scale-y), 1) !important;
+}
+.container .branch-list__boxItem img {
+  transform: scale3d(var(--scale-x), var(--scale-y), 1);
+}
+
+.landing-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.landing-cover__mockUpContent {
+  position: relative;
+  width: 260px;
+  height: 528px;
+}
+
+.landing-cover__mockUpImage {
+  width: 100%;
+  height: auto;
+}
+
+.landing-cover__imageContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+}
+
+.landing-cover__imageAnimate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+  transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+}
+.landing-cover__box {
+  /* display: flex;
+  height: 120vh;
+  min-height: 900px;
+  flex-direction: column; */
+}
+
+.landing-cover__boxItem {
+  display: flex;
+  height: 120vh;
+  min-height: 900px;
+  flex-direction: column;
+}
+
+.landing-cover__boxItemMobileImage img {
+  width: 100%;
+  height: auto;
+}
+
+.landing-cover__title {
+  margin-top: 0;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.landing-cover__detail {
+  font-size: 16px;
+  color: #555;
+  line-height: 24px;
+}
+
+.landing-cover__button {
+  display: inline-block;
+  align-items: center;
+  margin-top: 12px;
+  color: #0089ec;
+  font-weight: 600 !important;
+}
+
+.landing-cover__button svg {
+  margin-left: 5px;
+}
+.landing-cover__boxItem {
+  margin-top: 400px; /* İlk kutuların üst kısmına boşluk ekliyoruz */
+  /* Diğer stil eklemeleri */
+}
+.landing-cover__phoneWrapper {
+  position: sticky; /* Telefonu sabit yapacak */
+  top: 0;
+  z-index: 10;
 }
