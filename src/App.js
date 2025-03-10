@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState } from "react";
 import Header from "./Components/Header";
 import HomePage from "./Components/HomePage";
+import Footer from "./Components/Footer";
 
 function App() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <Header showDropdown={showDropdown} toggleDropdown={toggleDropdown} />
       <HomePage toggleDropdown={toggleDropdown} />
+      <Footer />
     </div>
   );
 }
