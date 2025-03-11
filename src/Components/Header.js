@@ -203,7 +203,7 @@ function Header({ showDropdown, toggleDropdown }) {
               </div>
             </Container>
           </NavDropdown>
-          <Nav.Link href="/kampanyalar">Kampanyalar</Nav.Link>
+          <Nav.Link href="/campaigns">Kampanyalar</Nav.Link>
           <Nav.Link href="/police-iptal/basvuru">
             Poliçe İptal İşlemleri
           </Nav.Link>
