@@ -197,16 +197,18 @@ export default function Campaigns() {
                 title={campaign.title}
                 className="text-decoration-none"
               >
-                <div className="card">
+                <div className="blog-post-card">
                   <img
                     src={campaign.image}
                     alt={campaign.title}
                     className="card-img-top"
                   />
-                  <div className="card-body">
-                    <h5 className="card-title">{campaign.title}</h5>
-                    <p className="card-text">{campaign.description}</p>
-                    <p className="card-text">
+                  <div className="blog-post-card-body">
+                    <h5 className="blog-post-card-title">{campaign.title}</h5>
+                    <p className="blog-post-card-text">
+                      {campaign.description}
+                    </p>
+                    <p className="blog-post-card-text">
                       <small className="text-muted">{campaign.date}</small>
                     </p>
                   </div>

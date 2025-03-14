@@ -322,7 +322,7 @@ export default function HomePage({ toggleDropdown }) {
             </Col>
 
             {/* Sağ kısım */}
-            <Col xs={12} lg={7} className="d-none d-lg-block text-end">
+            <Col xs={12} lg={7} className="d-none d-lg-block text-end  ">
               <div className="landing-cover__phoneWrapper">
                 {/* Telefon Mockup */}
                 <section>
@@ -775,7 +775,12 @@ export default function HomePage({ toggleDropdown }) {
                   />
                   <Card.Body style={{ with: "100px", height: "90px" }}>
                     <Card.Title>
-                      <a href={category.link}>{category.title}</a>
+                      <a
+                        style={{ color: "black", textDecoration: "none" }}
+                        href={category.link}
+                      >
+                        {category.title}
+                      </a>
                     </Card.Title>
                   </Card.Body>
                 </Card>

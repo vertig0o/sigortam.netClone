@@ -44,33 +44,34 @@
   height: 100%;
 }
 
-.card-body {
+.blog-post-card-body {
   flex-grow: 1;
   background-color: #f5f7f9;
 }
 
-.card {
+.blog-post-card {
   height: 100%;
   display: flex;
   flex-direction: column;
   border: none;
 }
 
-.card-img-top {
+.blog-post-card-img-top {
   object-fit: cover;
   height: 200px;
 }
 
-.card-title {
+.blog-post-card-title {
   font-size: 1.2rem;
+  color: black;
 }
 
-.card-text {
+.blog-post-card-text {
   font-size: 1rem;
+  color: black;
 }
-.card:hover {
+.blog-post-card:hover {
   transform: none;
-
   box-shadow: none;
   cursor: default;
 }

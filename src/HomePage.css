@@ -76,12 +76,6 @@
   opacity: 1;
   transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
 }
-.landing-cover__box {
-  /* display: flex;
-  height: 120vh;
-  min-height: 900px;
-  flex-direction: column; */
-}
 
 .landing-cover__boxItem {
   display: flex;
@@ -119,11 +113,10 @@
   margin-left: 5px;
 }
 .landing-cover__boxItem {
-  margin-top: 400px; /* İlk kutuların üst kısmına boşluk ekliyoruz */
-  /* Diğer stil eklemeleri */
+  margin-top: 400px;
 }
 .landing-cover__phoneWrapper {
-  position: sticky; /* Telefonu sabit yapacak */
+  position: sticky;
   top: 0;
   z-index: 10;
 }
@@ -156,7 +149,7 @@
   width: 100%;
   padding: 0;
   overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
 }
 
 .embed-responsive iframe {
@@ -189,27 +182,27 @@
   margin: 0 auto;
 }
 .carousel {
-  max-width: 800px; /* Carousel genişliği */
-  margin: 0 auto; /* Ortalamak için */
+  max-width: 800px;
+  margin: 0 auto;
 }
 .carousel img {
   width: 100%;
-  height: 400px; /* Sabit yükseklik */
-  object-fit: cover; /* Görsellerin orantılı kırpılması */
-  border-radius: 10px; /* Köşeleri yuvarlat */
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .carousel .carousel-control-prev,
 .carousel .carousel-control-next {
-  width: 5%; /* Ok düğmelerini küçült */
+  width: 5%;
 }
 
 .carousel .carousel-indicators {
-  bottom: -30px; /* Noktaları biraz aşağı kaydır */
+  bottom: -30px;
 }
 
 .carousel .carousel-indicators .active {
-  background-color: #007bff; /* Aktif noktayı mavi yap */
+  background-color: #007bff;
 }
 
 .comment-list__title {
@@ -258,7 +251,7 @@
 }
 .home-page__awardList {
   padding: 40px 0;
-  background-color: #f8f9fa; /* Color-bg-03'ü buraya uygulayabilirsiniz */
+  background-color: #f8f9fa;
 }
 
 .award-carousel__detailTitle {

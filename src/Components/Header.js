@@ -228,12 +228,11 @@ function Header({ showDropdown, toggleDropdown }) {
               44444
             </span>
           </Nav.Link>
-          <Button
-            className="button app-button app-button--default app-button--xs ms-2"
-            style={{ width: "55%" }}
-          >
-            Giriş yap/Üye ol
-          </Button>
+          <div className="nav-button">
+            <Button className="button app-button app-button--default app-button--xs ms-2">
+              Giriş yap/Üye ol
+            </Button>
+          </div>
         </div>
       </Navbar.Collapse>
     </Navbar>
